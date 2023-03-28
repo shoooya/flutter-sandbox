@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  flutter:
+    build: ./docker/flutter
+    container_name: flutter
+    working_dir: /home/app/src
+    tty: true
+    volumes:
+      - type: bind
+        source: ./src
+        target: /home/app/src

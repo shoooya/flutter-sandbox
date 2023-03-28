@@ -1,0 +1,15 @@
+{
+  "name": "Flutter docker",
+  "context": "../src",
+  "dockerComposeFile": [
+    "../docker-compose.yml",
+  ],
+  "service": "flutter",
+  "settings": { 
+    "terminal.integrated.shell.linux": "/bin/bash",
+  },
+  "extensions": [
+    "dart-code.flutter",
+    "alexisvt.flutter-snippets",
+  ],
+}
